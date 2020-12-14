@@ -1,0 +1,14 @@
+{
+  "name": "ds-ts",
+  "version": "1.0.0",
+  "description": "datastructures and algorithms in Typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "trung",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.1.3"
+  }
+}
