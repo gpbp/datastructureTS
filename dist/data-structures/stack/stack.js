@@ -32,9 +32,8 @@ class Stack {
      */
     peek() {
         if (this.isEmpty())
-            return undefined;
-        else
-            return this._items[this._items.length - 1];
+            throw new Error('the stack is empty');
+        return this._items[this._items.length - 1];
     }
     /**
      * return true if the stack is empty

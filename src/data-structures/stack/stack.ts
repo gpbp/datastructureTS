@@ -23,7 +23,7 @@ export class Stack<T> {
     /**
      * return the item on top of the stack
      */
-    pop(): T {
+    pop(): T | undefined {
         return this._items.pop();
     }
 
@@ -33,9 +33,8 @@ export class Stack<T> {
      */
     peek(): T {
         if (this.isEmpty())
-            return undefined;
-        else
-            return this._items[this._items.length - 1];
+            throw new Error('the stack is empty');
+        return this._items[this._items.length - 1];
     }
 
     /**
